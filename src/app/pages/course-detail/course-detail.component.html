@@ -1,0 +1,12 @@
+<!-- src/app/pages/course-detail/course-detail.component.html -->
+
+<app-sidebar [chapters]="course.chapters" (chapterSelected)="onChapterSelect($event)"></app-sidebar>
+<div class="course-content">
+  <h1>{{ course.title }}</h1>
+  <p>{{ course.description }}</p>
+  <div>
+    <h2>{{ selectedChapter?.title }}</h2>
+    <p>{{ selectedChapter?.content }}</p>
+    <pdf-viewer *ngIf="selectedChapter?.pdfUrl" [src]="selectedChapter.pdfUrl" [render-text]="true" style="display: block;"></pdf-viewer>
+  </div>
+</div>

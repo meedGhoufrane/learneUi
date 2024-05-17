@@ -1,0 +1,9 @@
+/* src/app/pages/course-detail/course-detail.component.css */
+
+.course-content {
+  padding: 20px;
+}
+
+.course-content h1 {
+  margin-top: 0;
+}

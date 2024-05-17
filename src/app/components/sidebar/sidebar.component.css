@@ -1,0 +1,22 @@
+/* src/app/components/sidebar/sidebar.component.css */
+
+.sidebar {
+  width: 200px;
+  border-right: 1px solid #ddd;
+  padding: 10px;
+  float: left;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #f0f0f0;
+}
