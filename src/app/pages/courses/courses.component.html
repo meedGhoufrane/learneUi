@@ -1,10 +1,7 @@
-<!-- src/app/pages/courses/courses.component.html -->
-
 <div class="course-list">
-    <div *ngFor="let course of courses" class="course-card">
-      <h3>{{ course.title }}</h3>
-      <p>{{ course.description }}</p>
-      <button [routerLink]="['/courses', course.id]">View Course</button>
-    </div>
+  <div *ngFor="let course of courses" class="course-card">
+    <h3>{{ course.title }}</h3>
+    <p>{{ course.description }}</p>
+    <button [routerLink]="['/courses', course.id]">View Course</button>
   </div>
-  
+</div>

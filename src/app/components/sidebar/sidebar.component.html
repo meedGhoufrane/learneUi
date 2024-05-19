@@ -1,9 +1,5 @@
-<!-- src/app/components/sidebar/sidebar.component.html -->
-
-<div class="sidebar">
-  <ul>
-    <li *ngFor="let chapter of chapters" (click)="selectChapter(chapter)">
-      {{ chapter.title }}
-    </li>
-  </ul>
-</div>
+<ul>
+  <li *ngFor="let chapter of chapters" (click)="selectChapter(chapter)">
+    {{ chapter.title }}
+  </li>
+</ul>
