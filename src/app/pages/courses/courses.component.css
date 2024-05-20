@@ -1,12 +1,12 @@
 /* src/app/pages/courses/courses.component.css */
 
 .course-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 20px;
+  padding: 20px;
+}
   .course-card {
     border: 1px solid #ddd;
     border-radius: 5px;

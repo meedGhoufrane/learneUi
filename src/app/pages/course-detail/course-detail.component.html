@@ -1,17 +1,15 @@
-<div class="course-detail">
-  <h2>{{ selectedCourse?.title }}</h2>
-  <div class="chapter-content">
-    <app-sidebar
-      [chapters]="selectedCourse?.chapters"
-      (chapterSelected)="onChapterSelected($event)">
-    </app-sidebar>
-    <div class="chapter-details">
-      <h3>{{ selectedChapter?.title }}</h3>
-      <pdf-viewer *ngIf="selectedChapter?.pdfUrl"
-                  [src]="selectedChapter.pdfUrl"
-                  [render-text]="true"
-                  style="display: block;">
-      </pdf-viewer>
-    </div>
+<app-sidebar [chapters]="selectedCourse?.chapters" (chapterSelected)="onChapterSelect($event)"></app-sidebar>
+<div class="course-content" *ngIf="selectedCourse">
+  <h1>{{ selectedCourse.title }}</h1>
+  <p>{{ selectedCourse.description }}</p>
+  <div>
+    <h2>{{ selectedChapter?.title }}</h2>
+    <p>{{ selectedChapter?.content }}</p>
+    <!-- Integrate PDF viewer here -->
+    <pdf-viewer *ngIf="selectedChapter?.pdfUrl"
+                [src]="selectedChapter.pdfUrl"
+                [render-text]="true"
+                style="display: block;">
+    </pdf-viewer>
   </div>
 </div>

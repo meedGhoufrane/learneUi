@@ -1,0 +1,22 @@
+/* course-chapters.component.css */
+
+.chapter-list {
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    width: 200px; /* Adjust width as needed */
+  }
+  
+  .chapter-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .chapter-list li {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .chapter-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
